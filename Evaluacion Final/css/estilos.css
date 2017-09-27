@@ -1,0 +1,224 @@
+
+body{
+	width: 100%;
+	height: 100%;
+	margin:0;
+	padding: 0;
+	background: #02010a;
+	font-family: 'Dancing Script', cursive;
+
+}
+
+body{
+animation-duration: 3s;
+animation-name: bote;
+
+}
+@-webkit-keyframes bote {
+	0%{
+		margin-top: 150%;
+
+	}
+	60%{
+		margin-top: -5%;
+
+	}
+
+	100%{
+		margin-top: 0%;
+
+	}
+
+}
+
+
+
+
+#cabecera{
+	width: 100%;
+  height:100px;
+	background-color: #5b7989;
+	border-radius: 10px 10px 0 0 ;
+	animation: bote;
+
+}
+
+
+.titulo_cabecera{
+	float: left;
+	margin: 2px;
+	padding: 23px 0 0 20px;
+	font-size: 2em;
+	color: white;
+	text-shadow: 2px 2px #02010a;
+
+
+
+
+}
+#cabecera nav{
+	float: right;
+	margin: 2px;
+	padding: 25px ;
+	font-size: 1.5em;
+	word-spacing: 15px;
+
+}
+
+#cabecera a[href^="index"]{
+	color: white;
+	text-decoration: none;
+
+}
+
+.dos{
+	color: white;
+
+}
+
+#imagen_central{
+	width: 100%;
+	background-color:#82c3a6;
+	text-align: center;
+}
+#imagen_central img{
+	margin: 10px;
+	width: 40%;
+	box-shadow: 2px 2px #02010a;
+}
+
+#imagen_secundaria{
+	width: 100%;
+	background-color: #d5c75f;
+	text-align: center;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
+#imagen_secundaria .uno{
+	width: 36%;
+	margin: 10px 50px 10px 10px;
+	align-self: left;
+	border: 1px solid white);
+	transition: rotate, 2s;
+	order: 1;
+}
+
+#imagen_secundaria .uno:hover{
+	transform: rotate(10deg);
+	box-shadow: 3px 3px  #82c3a6;
+
+}
+
+#imagen_secundaria .dos{
+
+	width: 36%;
+	padding: 10px 10px 10px 50px;
+	align-self: right;
+	border: 1px;
+	transition:translate, 2s;
+	order: 2;
+}
+#imagen_secundaria .dos:hover{
+	transform:translate(20px, -5px);
+	box-shadow: 3px 3px  #82c3a6;	
+
+}
+ #imagen_secundaria a {
+	 width: 50%;
+	 display: block;
+	 color: black;
+	 font-size: 1.5em;
+	 order: 3;
+ }
+
+ footer{
+	 width: 100%;
+	 background-color: #C6d5c5;
+	 border-radius: 0 0 10px 10px;
+	 margin: 0;
+	 text-align: center;
+ 	  display: flex;
+ 	 flex-flow: row wrap;
+	 justify-content: space-around;
+ }
+
+@media only screen and (max-width:900px	){
+	#cabecera{
+		width: 100%;
+		height: 130px;
+
+	}
+
+	.titulo_cabecera{
+		width: 100%;
+		padding: 0;
+		float:left;
+		text-align: center;
+		font-size: 33px;
+
+	}
+
+	#cabecera #menu{
+		width: 100%;
+		padding:0;
+		float: left;
+		text-align: center;
+		margin:5px;
+		word-spacing: 15px;
+		font-size: 20px;
+	}
+
+	#imagen_central{
+		width: 100%;
+		background-color:#82c3a6;
+		text-align: center;
+	}
+	#imagen_central img{
+		margin: 10% 10%;
+		width: 70%;
+		box-shadow: 2px 2px #02010a;
+	}
+	#imagen_secundaria{
+		width: 100%;
+		background-color: #d5c75f;
+		display:block;
+
+	}
+
+	#imagen_secundaria .uno{
+		width: 70%;
+		text-align: justify;
+		padding: 0;
+		margin: 10px 0px 0px;
+		border: 1px;
+		order: 1
+	}
+
+	#imagen_secundaria .dos{
+		width: 70%;
+		padding: 0;
+		text-align: justify;
+		border: 1px;
+		order: 2
+	}
+	#imagen_secundaria a{
+		width: 100%;
+		color: black;
+		font-size: 1.5em;
+		order: 3;
+
+	}
+	footer{
+ 	 width: 100%;
+ 	 background-color: #C6d5c5;
+ 	 border-radius: 0 0 10px 10px;
+ 	 margin: 0;
+ 	 text-align: center;
+	 display: block;
+	 padding: 0;
+  }
+	h1{
+		margin: 0;
+	}
